@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">mBank</string>
+
+    <!--Login Activity-->
+    <string name="welcome_message">Welcome to mBank!</string>
+    <string name="button_login">Login to your account</string>
+    <string name="button_register">Register your account</string>
+    <string name="login_description">Hello %s %s, please login to your account by clicking the button below.</string>
+    <string name="register_description">Looks like you are a new user, please register by clicking the button below.</string>
+    <string name="button_continue">Continue</string>
+    <string name="enter_details">To continue please enter your first and last name.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_pin_login">Please enter your pin code</string>
+    <string name="login">Login</string>
+    <string name="enter_details_error">You need to enter your first and last name</string>
+    <string name="pin_length">Your pin needs to be 4 to 6 characters long</string>
+    <string name="pin_bad">The entered pin is not correct, please try again</string>
+
+    <!--Main Activity-->
+    <string name="hello_user">%s %s\'s bank account</string>
+    <string name="account_balance">Account Balance:</string>
+    <string name="transactions">Your Transactions:</string>
+    <string name="my_accounts">My Accounts</string>
+    <string name="network_error">Network error occurred, please log in again</string>
+    <string name="transaction_type">%s (%s)</string>
+    <string name="concat_two_strings">%s %s</string>
+    <string name="choose_account">Choose Account</string>
+
+    <!--Keyboard-->
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+</resources>

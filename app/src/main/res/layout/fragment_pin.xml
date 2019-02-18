@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <TextView
+        android:id="@+id/pin_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/enter_pin_login"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/pin_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_description"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/rectangle_border"
+        android:clickable="false"
+        android:focusable="false"
+        android:maxLength="6"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.bank.mbank.widget.CustomKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_edit_text"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_button"
+        android:gravity="center"
+        android:paddingStart="9dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="9dp"
+        android:paddingBottom="15dp"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

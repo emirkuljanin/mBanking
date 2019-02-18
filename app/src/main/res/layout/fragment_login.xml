@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <ImageView
+        android:id="@+id/bank_logo_image"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bank_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bank_logo_image"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="@string/welcome_message"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/login_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:src="@drawable/background_bank_logo" />
+
+    <TextView
+        android:id="@+id/login_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:padding="7sp"
+        android:text="@string/register_description"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_button"
+        android:gravity="center"
+        android:paddingStart="9dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="9dp"
+        android:textAllCaps="true"
+        android:paddingBottom="15dp"
+        android:text="@string/button_register"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
