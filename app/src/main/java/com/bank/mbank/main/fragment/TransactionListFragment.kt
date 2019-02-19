@@ -131,12 +131,12 @@ class TransactionListFragment : Fragment() {
     private fun setupAccount(index: Int) {
         val transactions = bankStatement!!.acounts[index].transactions
         val formatter = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
-        val headerFormat = SimpleDateFormat("MMMM, yyyy", Locale.getDefault())
+        val spinnerFormat = SimpleDateFormat("MMMM, yyyy", Locale.getDefault())
         val spinnerList = ArrayList<String>()
 
         //Format date for better visibility and add to a list of spinner items
         for (transaction in transactions) {
-            val formattedDate = headerFormat.format(formatter.parse(transaction.date))
+            val formattedDate = spinnerFormat.format(formatter.parse(transaction.date))
             spinnerList.add(formattedDate)
         }
 
@@ -186,8 +186,8 @@ class TransactionListFragment : Fragment() {
 
     private fun isSelectedMonth(date: String): Boolean {
         val formatter = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
-        val headerFormat = SimpleDateFormat("MMMM, yyyy", Locale.getDefault())
+        val spinnerFormat = SimpleDateFormat("MMMM, yyyy", Locale.getDefault())
 
-        return headerFormat.format(formatter.parse(date)) == dateSpinner!!.selectedItem as String
+        return spinnerFormat.format(formatter.parse(date)) == dateSpinner!!.selectedItem as String
     }
 }
