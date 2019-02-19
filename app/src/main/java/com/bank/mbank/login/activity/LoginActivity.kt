@@ -3,7 +3,7 @@ package com.bank.mbank.login.activity
 import android.os.Bundle
 import com.bank.mbank.R
 import com.bank.mbank.login.fragment.LoginFragment
-import com.bank.mbank.widget.BaseActivity
+import com.bank.mbank.BaseActivity
 
 class LoginActivity : BaseActivity() {
 

@@ -9,6 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitUtil {
     private val apiService: ApiService
 
+    //Initialize retrofit and create apiService class
     init {
         val retrofit = Retrofit.Builder()
                 .baseUrl("http://mobile.asseco-see.hr")

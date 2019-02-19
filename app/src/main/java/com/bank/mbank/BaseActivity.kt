@@ -1,4 +1,4 @@
-package com.bank.mbank.widget
+package com.bank.mbank
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.room.Room
-import com.bank.mbank.R
 import com.bank.mbank.database.AppDatabase
 
 @SuppressLint("Registered")
