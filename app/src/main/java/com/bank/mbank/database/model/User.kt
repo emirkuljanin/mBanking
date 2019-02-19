@@ -3,7 +3,7 @@ package com.bank.mbank.database.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 
-@Entity(tableName = "users", primaryKeys = arrayOf("first_name", "last_name"))
+@Entity(tableName = "users", primaryKeys = ["first_name", "last_name"])
 data class User(
         @ColumnInfo(name = "first_name")
         var firstName: String,

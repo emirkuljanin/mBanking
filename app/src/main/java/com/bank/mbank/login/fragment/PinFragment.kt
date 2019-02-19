@@ -78,6 +78,7 @@ class PinFragment : DialogFragment() {
             activity.startActivity(activity, MainActivity()) else
             Toast.makeText(activity, R.string.pin_bad, Toast.LENGTH_SHORT).show()
 
+        //Dismiss dialog after finishing all work
         this.dismiss()
     }
 }

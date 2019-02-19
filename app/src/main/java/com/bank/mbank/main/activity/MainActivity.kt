@@ -3,7 +3,7 @@ package com.bank.mbank.main.activity
 import android.os.Bundle
 import com.bank.mbank.R
 import com.bank.mbank.main.fragment.TransactionListFragment
-import com.bank.mbank.widget.BaseActivity
+import com.bank.mbank.BaseActivity
 
 class MainActivity : BaseActivity() {
 
